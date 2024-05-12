@@ -62,8 +62,10 @@ if __name__ == '__main__':
     data = pre_process()
 
 st.subheader('월별 판매량 분석')
+
 with st.form('form', clear_on_submit=True):
     col1, col2 = st.columns(2)
+
     submitted1 = col1.form_submit_button('판매량 그래프')
     submitted2 = col2.form_submit_button('매출액 그래프')
 
